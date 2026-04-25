@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>855acf30e76e4ff9be19e01e5b90a6db</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" id="wcZNGk8gf-o7">
+<p><strong>CRIME ANALYSIS</strong></p>
+</div>
+<div class="cell code" data-execution_count="2" id="mirA2J1Ff1yZ">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly <span class="im">as</span> wtf</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="5" id="Z6VCX2eahURf">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&#39;/content/crimes.csv&#39;</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="6"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:417}"
+id="X3uHd9TOhbaw" data-outputId="be2d7514-364c-4f0d-d78e-e2362cc8ed32">
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+
+  <div id="df-05d86071-9e28-48fd-ae12-8c21557ae8f5" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DR_NO</th>
+      <th>Date Rptd</th>
+      <th>DATE OCC</th>
+      <th>TIME OCC</th>
+      <th>AREA NAME</th>
+      <th>Crm Cd Desc</th>
+      <th>Vict Age</th>
+      <th>Vict Sex</th>
+      <th>Vict Descent</th>
+      <th>Weapon Desc</th>
+      <th>Status Desc</th>
+      <th>LOCATION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>220314085</td>
+      <td>2022-07-22</td>
+      <td>2020-05-12</td>
+      <td>1110</td>
+      <td>Southwest</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>27</td>
+      <td>F</td>
+      <td>B</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>2500 S  SYCAMORE                     AV</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>222013040</td>
+      <td>2022-08-06</td>
+      <td>2020-06-04</td>
+      <td>1620</td>
+      <td>Olympic</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>60</td>
+      <td>M</td>
+      <td>H</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>3300    SAN MARINO                   ST</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>220614831</td>
+      <td>2022-08-18</td>
+      <td>2020-08-17</td>
+      <td>1200</td>
+      <td>Hollywood</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>28</td>
+      <td>M</td>
+      <td>H</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>1900    TRANSIENT</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>231207725</td>
+      <td>2023-02-27</td>
+      <td>2020-01-27</td>
+      <td>635</td>
+      <td>77th Street</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>37</td>
+      <td>M</td>
+      <td>H</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>6200    4TH                          AV</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>220213256</td>
+      <td>2022-07-14</td>
+      <td>2020-07-14</td>
+      <td>900</td>
+      <td>Rampart</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>79</td>
+      <td>M</td>
+      <td>B</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>1200 W  7TH                          ST</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-05d86071-9e28-48fd-ae12-8c21557ae8f5')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-05d86071-9e28-48fd-ae12-8c21557ae8f5 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-05d86071-9e28-48fd-ae12-8c21557ae8f5');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="7"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="ojNCVQtuij0p" data-outputId="84b99382-33e9-478f-b6db-c7dfa1d4f7e4">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 185715 entries, 0 to 185714
+Data columns (total 12 columns):
+ #   Column        Non-Null Count   Dtype 
+---  ------        --------------   ----- 
+ 0   DR_NO         185715 non-null  int64 
+ 1   Date Rptd     185715 non-null  object
+ 2   DATE OCC      185715 non-null  object
+ 3   TIME OCC      185715 non-null  int64 
+ 4   AREA NAME     185715 non-null  object
+ 5   Crm Cd Desc   185715 non-null  object
+ 6   Vict Age      185715 non-null  int64 
+ 7   Vict Sex      185704 non-null  object
+ 8   Vict Descent  185705 non-null  object
+ 9   Weapon Desc   73502 non-null   object
+ 10  Status Desc   185715 non-null  object
+ 11  LOCATION      185715 non-null  object
+dtypes: int64(3), object(9)
+memory usage: 17.0+ MB
+</code></pre>
+</div>
+</div>
+<div class="cell markdown" id="a0f3a2e3">
+<p>The <code>TIME OCC</code> column is currently an integer representing
+military time (e.g., <code>1110</code> for <code>11:10</code>). To
+convert it into a time structure, I will first convert it to a string,
+pad it with leading zeros to ensure a 4-digit format, and then parse it
+into a proper time object.</p>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="3f856df5" data-outputId="15e61219-a161-4f88-84fb-89341989040e">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;TIME OCC&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;TIME OCC&#39;</span>].astype(<span class="bu">str</span>).<span class="bu">str</span>.zfill(<span class="dv">4</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;TIME OCC&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;TIME OCC&#39;</span>], <span class="bu">format</span><span class="op">=</span><span class="st">&#39;%H%M&#39;</span>).dt.time</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Data types after converting &#39;TIME OCC&#39; to time object:&quot;</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Data types after converting &#39;TIME OCC&#39; to time object:
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 185715 entries, 0 to 185714
+Data columns (total 12 columns):
+ #   Column        Non-Null Count   Dtype 
+---  ------        --------------   ----- 
+ 0   DR_NO         185715 non-null  int64 
+ 1   Date Rptd     185715 non-null  object
+ 2   DATE OCC      185715 non-null  object
+ 3   TIME OCC      185715 non-null  object
+ 4   AREA NAME     185715 non-null  object
+ 5   Crm Cd Desc   185715 non-null  object
+ 6   Vict Age      185715 non-null  int64 
+ 7   Vict Sex      185704 non-null  object
+ 8   Vict Descent  185705 non-null  object
+ 9   Weapon Desc   73502 non-null   object
+ 10  Status Desc   185715 non-null  object
+ 11  LOCATION      185715 non-null  object
+dtypes: int64(2), object(10)
+memory usage: 17.0+ MB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:417}"
+id="48d81c8e" data-outputId="8c8a1647-0984-4512-eb95-14f68577a13c">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>display(df.head())</span></code></pre></div>
+<div class="output display_data">
+
+  <div id="df-a3007195-3555-46b5-b285-1bd6868a3d2b" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DR_NO</th>
+      <th>Date Rptd</th>
+      <th>DATE OCC</th>
+      <th>TIME OCC</th>
+      <th>AREA NAME</th>
+      <th>Crm Cd Desc</th>
+      <th>Vict Age</th>
+      <th>Vict Sex</th>
+      <th>Vict Descent</th>
+      <th>Weapon Desc</th>
+      <th>Status Desc</th>
+      <th>LOCATION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>220314085</td>
+      <td>2022-07-22</td>
+      <td>2020-05-12</td>
+      <td>11:10:00</td>
+      <td>Southwest</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>27</td>
+      <td>F</td>
+      <td>B</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>2500 S  SYCAMORE                     AV</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>222013040</td>
+      <td>2022-08-06</td>
+      <td>2020-06-04</td>
+      <td>16:20:00</td>
+      <td>Olympic</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>60</td>
+      <td>M</td>
+      <td>H</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>3300    SAN MARINO                   ST</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>220614831</td>
+      <td>2022-08-18</td>
+      <td>2020-08-17</td>
+      <td>12:00:00</td>
+      <td>Hollywood</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>28</td>
+      <td>M</td>
+      <td>H</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>1900    TRANSIENT</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>231207725</td>
+      <td>2023-02-27</td>
+      <td>2020-01-27</td>
+      <td>06:35:00</td>
+      <td>77th Street</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>37</td>
+      <td>M</td>
+      <td>H</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>6200    4TH                          AV</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>220213256</td>
+      <td>2022-07-14</td>
+      <td>2020-07-14</td>
+      <td>09:00:00</td>
+      <td>Rampart</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>79</td>
+      <td>M</td>
+      <td>B</td>
+      <td>NaN</td>
+      <td>Invest Cont</td>
+      <td>1200 W  7TH                          ST</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a3007195-3555-46b5-b285-1bd6868a3d2b')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a3007195-3555-46b5-b285-1bd6868a3d2b button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a3007195-3555-46b5-b285-1bd6868a3d2b');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="ad337437">
+<p>The <code>Date Rptd</code> and <code>DATE OCC</code> columns are
+currently of object type. Converting them to datetime objects will allow
+for proper time-series analysis.</p>
+</div>
+<div class="cell code" data-execution_count="10"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="ed28ab1a" data-outputId="c3e88db2-04f1-4adc-b7cd-ac7de3c22bf8">
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Date Rptd&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;Date Rptd&#39;</span>])</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;DATE OCC&#39;</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">&#39;DATE OCC&#39;</span>])</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Data types after converting date columns:&quot;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>df.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Data types after converting date columns:
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 185715 entries, 0 to 185714
+Data columns (total 12 columns):
+ #   Column        Non-Null Count   Dtype         
+---  ------        --------------   -----         
+ 0   DR_NO         185715 non-null  int64         
+ 1   Date Rptd     185715 non-null  datetime64[ns]
+ 2   DATE OCC      185715 non-null  datetime64[ns]
+ 3   TIME OCC      185715 non-null  object        
+ 4   AREA NAME     185715 non-null  object        
+ 5   Crm Cd Desc   185715 non-null  object        
+ 6   Vict Age      185715 non-null  int64         
+ 7   Vict Sex      185704 non-null  object        
+ 8   Vict Descent  185705 non-null  object        
+ 9   Weapon Desc   73502 non-null   object        
+ 10  Status Desc   185715 non-null  object        
+ 11  LOCATION      185715 non-null  object        
+dtypes: datetime64[ns](2), int64(2), object(8)
+memory usage: 17.0+ MB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="21"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="e911d3b7" data-outputId="8b10d7f0-5332-4b34-8db6-d68723e16984">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Shape of DataFrame before dropping duplicates: </span><span class="sc">{</span>df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>df.drop_duplicates(inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Shape of DataFrame after dropping duplicates: </span><span class="sc">{</span>df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Shape of DataFrame before dropping duplicates: (185715, 13)
+Shape of DataFrame after dropping duplicates: (185715, 13)
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="12"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:460}"
+id="Gy9QX8jri2Bb" data-outputId="991cf59c-8b52-4aac-a098-1db28498be02">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>DR_NO</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Date Rptd</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>DATE OCC</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>TIME OCC</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>AREA NAME</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Crm Cd Desc</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Vict Age</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Vict Sex</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>Vict Descent</th>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>Weapon Desc</th>
+      <td>112213</td>
+    </tr>
+    <tr>
+      <th>Status Desc</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>LOCATION</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell markdown" id="e7e8df57">
+<p>Based on the missing values count, I will drop the
+<code>Weapon Desc</code> column due to the high number of missing
+values. For <code>Vict Sex</code> and <code>Vict Descent</code>, I will
+fill the missing values with their respective modes.</p>
+</div>
+<div class="cell code" data-execution_count="16"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:446}"
+id="d9388455" data-outputId="1a7f499e-9047-4664-eb4c-7f8f372cdb3e">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop the &#39;Weapon Desc&#39; column due to a large number of missing values</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">&#39;Weapon Desc&#39;</span> <span class="kw">in</span> df.columns:</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> df.drop(columns<span class="op">=</span>[<span class="st">&#39;Weapon Desc&#39;</span>])</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill missing values in &#39;Vict Sex&#39; with its mode</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>vict_sex_mode <span class="op">=</span> df[<span class="st">&#39;Vict Sex&#39;</span>].mode()[<span class="dv">0</span>]</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Vict Sex&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Vict Sex&#39;</span>].fillna(vict_sex_mode)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Fill missing values in &#39;Vict Descent&#39; with its mode</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>vict_descent_mode <span class="op">=</span> df[<span class="st">&#39;Vict Descent&#39;</span>].mode()[<span class="dv">0</span>]</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Vict Descent&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Vict Descent&#39;</span>].fillna(vict_descent_mode)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Missing values after cleaning:&quot;</span>)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>df.isnull().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Missing values after cleaning:
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="16">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>DR_NO</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Date Rptd</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>DATE OCC</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>TIME OCC</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>AREA NAME</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Crm Cd Desc</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Vict Age</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Vict Sex</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Vict Descent</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Status Desc</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>LOCATION</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> int64</label>
+</div>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:417}"
+id="4677269e" data-outputId="a65bbe47-8503-4c63-c284-0e6008285491">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>display(df.head())</span></code></pre></div>
+<div class="output display_data">
+
+  <div id="df-b4665975-cf76-4cfb-a26d-854426f0bea7" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DR_NO</th>
+      <th>Date Rptd</th>
+      <th>DATE OCC</th>
+      <th>TIME OCC</th>
+      <th>AREA NAME</th>
+      <th>Crm Cd Desc</th>
+      <th>Vict Age</th>
+      <th>Vict Sex</th>
+      <th>Vict Descent</th>
+      <th>Status Desc</th>
+      <th>LOCATION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>220314085</td>
+      <td>2022-07-22</td>
+      <td>2020-05-12</td>
+      <td>11:10:00</td>
+      <td>Southwest</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>27</td>
+      <td>F</td>
+      <td>B</td>
+      <td>Invest Cont</td>
+      <td>2500 S  SYCAMORE                     AV</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>222013040</td>
+      <td>2022-08-06</td>
+      <td>2020-06-04</td>
+      <td>16:20:00</td>
+      <td>Olympic</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>60</td>
+      <td>M</td>
+      <td>H</td>
+      <td>Invest Cont</td>
+      <td>3300    SAN MARINO                   ST</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>220614831</td>
+      <td>2022-08-18</td>
+      <td>2020-08-17</td>
+      <td>12:00:00</td>
+      <td>Hollywood</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>28</td>
+      <td>M</td>
+      <td>H</td>
+      <td>Invest Cont</td>
+      <td>1900    TRANSIENT</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>231207725</td>
+      <td>2023-02-27</td>
+      <td>2020-01-27</td>
+      <td>06:35:00</td>
+      <td>77th Street</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>37</td>
+      <td>M</td>
+      <td>H</td>
+      <td>Invest Cont</td>
+      <td>6200    4TH                          AV</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>220213256</td>
+      <td>2022-07-14</td>
+      <td>2020-07-14</td>
+      <td>09:00:00</td>
+      <td>Rampart</td>
+      <td>THEFT OF IDENTITY</td>
+      <td>79</td>
+      <td>M</td>
+      <td>B</td>
+      <td>Invest Cont</td>
+      <td>1200 W  7TH                          ST</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b4665975-cf76-4cfb-a26d-854426f0bea7')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-b4665975-cf76-4cfb-a26d-854426f0bea7 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-b4665975-cf76-4cfb-a26d-854426f0bea7');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+</div>
+<section id="crime-occurrences-by-time-of-day" class="cell markdown"
+id="5779efb0">
+<h3>Crime Occurrences by Time of Day</h3>
+<p>This line plot visualizes the frequency of crimes throughout the day,
+based on the <code>TIME OCC</code> column. It helps in identifying peak
+hours for criminal activity.</p>
+</section>
+<div class="cell code" data-execution_count="17"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:335}"
+id="3d66360d" data-outputId="7da02a34-e09e-4909-9dad-1d3197ceaf6b">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract hour for plotting from TIME OCC (which is a time object)</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Hour OCC&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;TIME OCC&#39;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: x.hour)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>time_counts <span class="op">=</span> df[<span class="st">&#39;Hour OCC&#39;</span>].value_counts().sort_index()</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span>time_counts.index, y<span class="op">=</span>time_counts.values)</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Number of Crimes by Hour of Day&#39;</span>)</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Hour of Day&#39;</span>)</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Crimes&#39;</span>)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>plt.xticks(<span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">24</span>)) <span class="co"># Ensure all hours are displayed</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/37e46c5afce745072d84c5190b977d817969ff39.png" /></p>
+</div>
+</div>
+<section id="crime-occurrences-by-date" class="cell markdown"
+id="77932d87">
+<h3>Crime Occurrences by Date</h3>
+<p>This line plot displays the trend of crime occurrences over time,
+using the <code>DATE OCC</code> column. This can reveal patterns,
+increases, or decreases in crime over the reporting period.</p>
+</section>
+<div class="cell code" data-execution_count="18"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:293}"
+id="d46e5d26" data-outputId="9886ef30-d776-42ed-9bcb-691e7f3b2ce3">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>date_counts <span class="op">=</span> df[<span class="st">&#39;DATE OCC&#39;</span>].value_counts().sort_index()</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">7</span>))</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>sns.lineplot(x<span class="op">=</span>date_counts.index, y<span class="op">=</span>date_counts.values)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Number of Crimes by Date of Occurrence&#39;</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Date of Occurrence&#39;</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Crimes&#39;</span>)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/dae364ac666c7ea366f088c9295c99a16701aeab.png" /></p>
+</div>
+</div>
+<section id="crime-reporting-delay-analysis" class="cell markdown"
+id="0f51b531">
+<h3>Crime Reporting Delay Analysis</h3>
+<p>This histogram shows the distribution of the time difference between
+when a crime occurred (<code>DATE OCC</code>) and when it was reported
+(<code>Date Rptd</code>). A positive value indicates that the crime was
+reported after it occurred, and the magnitude indicates the delay in
+days. This can highlight reporting efficiencies or delays.</p>
+</section>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:502}"
+id="&quot;80499165&quot;"
+data-outputId="18f7eb2f-f584-487b-90e3-37bc66ccff41">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Reporting Delay&#39;</span>] <span class="op">=</span> (df[<span class="st">&#39;Date Rptd&#39;</span>] <span class="op">-</span> df[<span class="st">&#39;DATE OCC&#39;</span>]).dt.days</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>sns.histplot(df[<span class="st">&#39;Reporting Delay&#39;</span>], bins<span class="op">=</span><span class="dv">50</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Distribution of Crime Reporting Delay (Days) - Limited to 100 Days&#39;</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Reporting Delay (Days)&#39;</span>)</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Crimes&#39;</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>plt.xlim(<span class="dv">0</span>, <span class="dv">100</span>) <span class="co"># Limit x-axis to 100 days</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Display some basic statistics for reporting delay</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Reporting Delay Statistics:&quot;</span>)</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">&#39;Reporting Delay&#39;</span>].describe())</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/1b11e609d726d7e7fd51f6075f5572add0d22212.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Reporting Delay Statistics:
+count    185715.000000
+mean         14.281593
+std          76.651531
+min           0.000000
+25%           0.000000
+50%           1.000000
+75%           2.000000
+max        1275.000000
+Name: Reporting Delay, dtype: float64
+</code></pre>
+</div>
+</div>
+<div class="cell code" id="8DrH009MouO1">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+<section id="crime-hotspots-by-area" class="cell markdown"
+id="3039390a">
+<h3>Crime Hotspots by Area</h3>
+<p>To identify crime hotspots, we'll analyze the frequency of crimes in
+each <code>AREA NAME</code>. This will give us an indication of which
+areas experience the most criminal activity.</p>
+</section>
+<div class="cell code" data-execution_count="22"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:380}"
+id="3031cec5" data-outputId="f8b9711e-0aaf-42d6-8ce3-68b3a7239cb2">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>area_crime_counts <span class="op">=</span> df[<span class="st">&#39;AREA NAME&#39;</span>].value_counts().reset_index()</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>area_crime_counts.columns <span class="op">=</span> [<span class="st">&#39;AREA NAME&#39;</span>, <span class="st">&#39;Crime Count&#39;</span>]</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Top 10 Crime Areas:&quot;</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>display(area_crime_counts.head(<span class="dv">10</span>))</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Top 10 Crime Areas:
+</code></pre>
+</div>
+<div class="output display_data">
+
+  <div id="df-b835ed09-873d-4958-8245-df5d8dcf2581" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>AREA NAME</th>
+      <th>Crime Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Central</td>
+      <td>14944</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Southwest</td>
+      <td>11945</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>77th Street</td>
+      <td>11739</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pacific</td>
+      <td>9923</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Hollywood</td>
+      <td>9762</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Southeast</td>
+      <td>9571</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Olympic</td>
+      <td>9414</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Newton</td>
+      <td>9152</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Van Nuys</td>
+      <td>8621</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>N Hollywood</td>
+      <td>8502</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b835ed09-873d-4958-8245-df5d8dcf2581')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-b835ed09-873d-4958-8245-df5d8dcf2581 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-b835ed09-873d-4958-8245-df5d8dcf2581');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="eda217ca">
+<p>Now, let's visualize these crime counts. Since direct geographic
+plotting requires detailed coordinate data for each area, which is not
+available in the current dataset, I will create a bar plot of the top 10
+crime areas. If you have geographic boundary data (e.g., GeoJSON) for
+these areas, we could then use libraries like <code>folium</code> or
+<code>geopandas</code> to create an interactive map. For now, a bar
+chart will effectively show the areas with the highest crime
+frequencies.</p>
+</div>
+<div class="cell code" data-execution_count="24"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:362}"
+id="6f004c01" data-outputId="2ba3e230-2b2c-4faf-ddb8-8d21a2d569b6">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>sns.barplot(x<span class="op">=</span><span class="st">&#39;Crime Count&#39;</span>, y<span class="op">=</span><span class="st">&#39;AREA NAME&#39;</span>, data<span class="op">=</span>area_crime_counts.head(<span class="dv">10</span>), hue<span class="op">=</span><span class="st">&#39;AREA NAME&#39;</span>, palette<span class="op">=</span><span class="st">&#39;viridis&#39;</span>, legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Top 10 Crime Hotspots by Area Name&#39;</span>)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Number of Crimes&#39;</span>)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Area Name&#39;</span>)</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">&#39;x&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/cb9aa77f0400f0750f8e44575df7df2cc60c0d97.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="26"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:585}"
+id="kEIrP325p0gx" data-outputId="404d5908-28b2-4380-957b-e6f97f9c2d41">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Install libraries</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install folium</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> folium</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> folium.plugins <span class="im">import</span> HeatMap</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Group by AREA</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a>area_counts <span class="op">=</span> df[<span class="st">&quot;AREA NAME&quot;</span>].value_counts().reset_index()</span>
+<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a>area_counts.columns <span class="op">=</span> [<span class="st">&quot;Area&quot;</span>, <span class="st">&quot;Crime Count&quot;</span>]</span>
+<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Coordinates for areas (Los Angeles Police Areas)</span></span>
+<span id="cb25-18"><a href="#cb25-18" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-19"><a href="#cb25-19" aria-hidden="true" tabindex="-1"></a>area_coords <span class="op">=</span> {</span>
+<span id="cb25-20"><a href="#cb25-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Central&quot;</span>: [<span class="fl">34.05</span>, <span class="op">-</span><span class="fl">118.25</span>],</span>
+<span id="cb25-21"><a href="#cb25-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Rampart&quot;</span>: [<span class="fl">34.06</span>, <span class="op">-</span><span class="fl">118.27</span>],</span>
+<span id="cb25-22"><a href="#cb25-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southwest&quot;</span>: [<span class="fl">34.01</span>, <span class="op">-</span><span class="fl">118.31</span>],</span>
+<span id="cb25-23"><a href="#cb25-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Hollywood&quot;</span>: [<span class="fl">34.10</span>, <span class="op">-</span><span class="fl">118.33</span>],</span>
+<span id="cb25-24"><a href="#cb25-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Harbor&quot;</span>: [<span class="fl">33.74</span>, <span class="op">-</span><span class="fl">118.29</span>],</span>
+<span id="cb25-25"><a href="#cb25-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Wilshire&quot;</span>: [<span class="fl">34.06</span>, <span class="op">-</span><span class="fl">118.34</span>],</span>
+<span id="cb25-26"><a href="#cb25-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;West LA&quot;</span>: [<span class="fl">34.05</span>, <span class="op">-</span><span class="fl">118.45</span>],</span>
+<span id="cb25-27"><a href="#cb25-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Van Nuys&quot;</span>: [<span class="fl">34.19</span>, <span class="op">-</span><span class="fl">118.45</span>],</span>
+<span id="cb25-28"><a href="#cb25-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;West Valley&quot;</span>: [<span class="fl">34.20</span>, <span class="op">-</span><span class="fl">118.55</span>],</span>
+<span id="cb25-29"><a href="#cb25-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Northeast&quot;</span>: [<span class="fl">34.12</span>, <span class="op">-</span><span class="fl">118.20</span>],</span>
+<span id="cb25-30"><a href="#cb25-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;77th Street&quot;</span>: [<span class="fl">33.97</span>, <span class="op">-</span><span class="fl">118.27</span>],</span>
+<span id="cb25-31"><a href="#cb25-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Newton&quot;</span>: [<span class="fl">34.00</span>, <span class="op">-</span><span class="fl">118.26</span>],</span>
+<span id="cb25-32"><a href="#cb25-32" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Pacific&quot;</span>: [<span class="fl">33.99</span>, <span class="op">-</span><span class="fl">118.46</span>],</span>
+<span id="cb25-33"><a href="#cb25-33" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;North Hollywood&quot;</span>: [<span class="fl">34.17</span>, <span class="op">-</span><span class="fl">118.38</span>],</span>
+<span id="cb25-34"><a href="#cb25-34" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Foothill&quot;</span>: [<span class="fl">34.27</span>, <span class="op">-</span><span class="fl">118.41</span>],</span>
+<span id="cb25-35"><a href="#cb25-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Devonshire&quot;</span>: [<span class="fl">34.26</span>, <span class="op">-</span><span class="fl">118.53</span>],</span>
+<span id="cb25-36"><a href="#cb25-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Mission&quot;</span>: [<span class="fl">34.27</span>, <span class="op">-</span><span class="fl">118.47</span>],</span>
+<span id="cb25-37"><a href="#cb25-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Olympic&quot;</span>: [<span class="fl">34.05</span>, <span class="op">-</span><span class="fl">118.30</span>],</span>
+<span id="cb25-38"><a href="#cb25-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Topanga&quot;</span>: [<span class="fl">34.20</span>, <span class="op">-</span><span class="fl">118.60</span>],</span>
+<span id="cb25-39"><a href="#cb25-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Southeast&quot;</span>: [<span class="fl">33.94</span>, <span class="op">-</span><span class="fl">118.24</span>],</span>
+<span id="cb25-40"><a href="#cb25-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Hollenbeck&quot;</span>: [<span class="fl">34.03</span>, <span class="op">-</span><span class="fl">118.21</span>]</span>
+<span id="cb25-41"><a href="#cb25-41" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb25-42"><a href="#cb25-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-43"><a href="#cb25-43" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-44"><a href="#cb25-44" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Map areas to coordinates</span></span>
+<span id="cb25-45"><a href="#cb25-45" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-46"><a href="#cb25-46" aria-hidden="true" tabindex="-1"></a>area_counts[<span class="st">&quot;lat&quot;</span>] <span class="op">=</span> area_counts[<span class="st">&quot;Area&quot;</span>].<span class="bu">map</span>(<span class="kw">lambda</span> x: area_coords.get(x, [<span class="va">None</span>, <span class="va">None</span>])[<span class="dv">0</span>])</span>
+<span id="cb25-47"><a href="#cb25-47" aria-hidden="true" tabindex="-1"></a>area_counts[<span class="st">&quot;lon&quot;</span>] <span class="op">=</span> area_counts[<span class="st">&quot;Area&quot;</span>].<span class="bu">map</span>(<span class="kw">lambda</span> x: area_coords.get(x, [<span class="va">None</span>, <span class="va">None</span>])[<span class="dv">1</span>])</span>
+<span id="cb25-48"><a href="#cb25-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-49"><a href="#cb25-49" aria-hidden="true" tabindex="-1"></a><span class="co"># Drop missing coords</span></span>
+<span id="cb25-50"><a href="#cb25-50" aria-hidden="true" tabindex="-1"></a>area_counts <span class="op">=</span> area_counts.dropna()</span>
+<span id="cb25-51"><a href="#cb25-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-52"><a href="#cb25-52" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-53"><a href="#cb25-53" aria-hidden="true" tabindex="-1"></a><span class="co"># 8. Create map</span></span>
+<span id="cb25-54"><a href="#cb25-54" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-55"><a href="#cb25-55" aria-hidden="true" tabindex="-1"></a>m <span class="op">=</span> folium.Map(location<span class="op">=</span>[<span class="fl">34.05</span>, <span class="op">-</span><span class="fl">118.25</span>], zoom_start<span class="op">=</span><span class="dv">11</span>)</span>
+<span id="cb25-56"><a href="#cb25-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-57"><a href="#cb25-57" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-58"><a href="#cb25-58" aria-hidden="true" tabindex="-1"></a><span class="co"># 9. Prepare heatmap data</span></span>
+<span id="cb25-59"><a href="#cb25-59" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-60"><a href="#cb25-60" aria-hidden="true" tabindex="-1"></a>heat_data <span class="op">=</span> area_counts[[<span class="st">&quot;lat&quot;</span>, <span class="st">&quot;lon&quot;</span>, <span class="st">&quot;Crime Count&quot;</span>]].values.tolist()</span>
+<span id="cb25-61"><a href="#cb25-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-62"><a href="#cb25-62" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-63"><a href="#cb25-63" aria-hidden="true" tabindex="-1"></a><span class="co"># 10. Add heatmap</span></span>
+<span id="cb25-64"><a href="#cb25-64" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-65"><a href="#cb25-65" aria-hidden="true" tabindex="-1"></a>HeatMap(heat_data, radius<span class="op">=</span><span class="dv">25</span>).add_to(m)</span>
+<span id="cb25-66"><a href="#cb25-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-67"><a href="#cb25-67" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-68"><a href="#cb25-68" aria-hidden="true" tabindex="-1"></a><span class="co"># 11. Add markers (optional but looks nice)</span></span>
+<span id="cb25-69"><a href="#cb25-69" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-70"><a href="#cb25-70" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> area_counts.iterrows():</span>
+<span id="cb25-71"><a href="#cb25-71" aria-hidden="true" tabindex="-1"></a>    folium.CircleMarker(</span>
+<span id="cb25-72"><a href="#cb25-72" aria-hidden="true" tabindex="-1"></a>        location<span class="op">=</span>[row[<span class="st">&quot;lat&quot;</span>], row[<span class="st">&quot;lon&quot;</span>]],</span>
+<span id="cb25-73"><a href="#cb25-73" aria-hidden="true" tabindex="-1"></a>        radius<span class="op">=</span><span class="dv">5</span>,</span>
+<span id="cb25-74"><a href="#cb25-74" aria-hidden="true" tabindex="-1"></a>        popup<span class="op">=</span><span class="ss">f&quot;</span><span class="sc">{</span>row[<span class="st">&#39;Area&#39;</span>]<span class="sc">}</span><span class="ss"> - </span><span class="sc">{</span>row[<span class="st">&#39;Crime Count&#39;</span>]<span class="sc">}</span><span class="ss"> crimes&quot;</span>,</span>
+<span id="cb25-75"><a href="#cb25-75" aria-hidden="true" tabindex="-1"></a>        fill<span class="op">=</span><span class="va">True</span></span>
+<span id="cb25-76"><a href="#cb25-76" aria-hidden="true" tabindex="-1"></a>    ).add_to(m)</span>
+<span id="cb25-77"><a href="#cb25-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-78"><a href="#cb25-78" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-79"><a href="#cb25-79" aria-hidden="true" tabindex="-1"></a><span class="co"># 12. Display map</span></span>
+<span id="cb25-80"><a href="#cb25-80" aria-hidden="true" tabindex="-1"></a><span class="co"># =========================</span></span>
+<span id="cb25-81"><a href="#cb25-81" aria-hidden="true" tabindex="-1"></a>m</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Requirement already satisfied: folium in /usr/local/lib/python3.12/dist-packages (0.20.0)
+Requirement already satisfied: branca&gt;=0.6.0 in /usr/local/lib/python3.12/dist-packages (from folium) (0.8.2)
+Requirement already satisfied: jinja2&gt;=2.9 in /usr/local/lib/python3.12/dist-packages (from folium) (3.1.6)
+Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from folium) (2.0.2)
+Requirement already satisfied: requests in /usr/local/lib/python3.12/dist-packages (from folium) (2.32.4)
+Requirement already satisfied: xyzservices in /usr/local/lib/python3.12/dist-packages (from folium) (2026.3.0)
+Requirement already satisfied: MarkupSafe&gt;=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2&gt;=2.9-&gt;folium) (3.0.3)
+Requirement already satisfied: charset_normalizer&lt;4,&gt;=2 in /usr/local/lib/python3.12/dist-packages (from requests-&gt;folium) (3.4.7)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in /usr/local/lib/python3.12/dist-packages (from requests-&gt;folium) (3.11)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests-&gt;folium) (2.5.0)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /usr/local/lib/python3.12/dist-packages (from requests-&gt;folium) (2026.2.25)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="26">
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_13b3aad7c7f3745ec022c604c1e1cdf2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+    &lt;script src=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_13b3aad7c7f3745ec022c604c1e1cdf2&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_13b3aad7c7f3745ec022c604c1e1cdf2 = L.map(
+                &quot;map_13b3aad7c7f3745ec022c604c1e1cdf2&quot;,
+                {
+                    center: [34.05, -118.25],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 11,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08381c6e1db51e65edd7631a9723a1bb = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_08381c6e1db51e65edd7631a9723a1bb.addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+            var heat_map_0d07a81f25304244edb4fb0d38f0560d = L.heatLayer(
+                [[34.05, -118.25, 14944.0], [34.01, -118.31, 11945.0], [33.97, -118.27, 11739.0], [33.99, -118.46, 9923.0], [34.1, -118.33, 9762.0], [33.94, -118.24, 9571.0], [34.05, -118.3, 9414.0], [34.0, -118.26, 9152.0], [34.19, -118.45, 8621.0], [34.06, -118.34, 8482.0], [34.2, -118.6, 8478.0], [34.06, -118.27, 8346.0], [34.2, -118.55, 8102.0], [34.05, -118.45, 7911.0], [34.12, -118.2, 7628.0], [34.26, -118.53, 7411.0], [34.27, -118.47, 6990.0], [33.74, -118.29, 6618.0], [34.03, -118.21, 6193.0], [34.27, -118.41, 5983.0]],
+                {
+  &quot;minOpacity&quot;: 0.5,
+  &quot;maxZoom&quot;: 18,
+  &quot;radius&quot;: 25,
+  &quot;blur&quot;: 15,
+}
+            );
+        
+    
+            heat_map_0d07a81f25304244edb4fb0d38f0560d.addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+            var circle_marker_659bcc883518e16461b92d5168d28532 = L.circleMarker(
+                [34.05, -118.25],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_7dbe10296c19ce95913b3727bedba65a = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_6a131312dce0201ea3cf7249c6d4bfe6 = $(`&lt;div id=&quot;html_6a131312dce0201ea3cf7249c6d4bfe6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Central - 14944 crimes&lt;/div&gt;`)[0];
+                popup_7dbe10296c19ce95913b3727bedba65a.setContent(html_6a131312dce0201ea3cf7249c6d4bfe6);
+            
+        
+
+        circle_marker_659bcc883518e16461b92d5168d28532.bindPopup(popup_7dbe10296c19ce95913b3727bedba65a)
+        ;
+
+        
+    
+    
+            var circle_marker_811dd7ea019085285d184d2889efd8c3 = L.circleMarker(
+                [34.01, -118.31],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_108f6bff9a446a556aaafa299d670932 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_a9b2270a0e67f85e4ea504ddd29d4a29 = $(`&lt;div id=&quot;html_a9b2270a0e67f85e4ea504ddd29d4a29&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Southwest - 11945 crimes&lt;/div&gt;`)[0];
+                popup_108f6bff9a446a556aaafa299d670932.setContent(html_a9b2270a0e67f85e4ea504ddd29d4a29);
+            
+        
+
+        circle_marker_811dd7ea019085285d184d2889efd8c3.bindPopup(popup_108f6bff9a446a556aaafa299d670932)
+        ;
+
+        
+    
+    
+            var circle_marker_9b0d5512475b345950424d453241edd2 = L.circleMarker(
+                [33.97, -118.27],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_bf7102120f0a97dd5e48e39c4f0987e1 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_459891cafe3ce4deb3dcae367278d66f = $(`&lt;div id=&quot;html_459891cafe3ce4deb3dcae367278d66f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;77th Street - 11739 crimes&lt;/div&gt;`)[0];
+                popup_bf7102120f0a97dd5e48e39c4f0987e1.setContent(html_459891cafe3ce4deb3dcae367278d66f);
+            
+        
+
+        circle_marker_9b0d5512475b345950424d453241edd2.bindPopup(popup_bf7102120f0a97dd5e48e39c4f0987e1)
+        ;
+
+        
+    
+    
+            var circle_marker_9dd8e4d85ec0e664fcec9d847dfc1426 = L.circleMarker(
+                [33.99, -118.46],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_7d165830cef9cf21934705d5f1621b60 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_100ebc4bd63911c12fc3a73d46c2fc15 = $(`&lt;div id=&quot;html_100ebc4bd63911c12fc3a73d46c2fc15&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Pacific - 9923 crimes&lt;/div&gt;`)[0];
+                popup_7d165830cef9cf21934705d5f1621b60.setContent(html_100ebc4bd63911c12fc3a73d46c2fc15);
+            
+        
+
+        circle_marker_9dd8e4d85ec0e664fcec9d847dfc1426.bindPopup(popup_7d165830cef9cf21934705d5f1621b60)
+        ;
+
+        
+    
+    
+            var circle_marker_3897de2961fab4cc69fe3317273d4cda = L.circleMarker(
+                [34.1, -118.33],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_942cb07586c889b5d1e2c63ff5bdee44 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_2f2b468470a6f18e8dc5e4de7899fd21 = $(`&lt;div id=&quot;html_2f2b468470a6f18e8dc5e4de7899fd21&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Hollywood - 9762 crimes&lt;/div&gt;`)[0];
+                popup_942cb07586c889b5d1e2c63ff5bdee44.setContent(html_2f2b468470a6f18e8dc5e4de7899fd21);
+            
+        
+
+        circle_marker_3897de2961fab4cc69fe3317273d4cda.bindPopup(popup_942cb07586c889b5d1e2c63ff5bdee44)
+        ;
+
+        
+    
+    
+            var circle_marker_901c01b0c7c27795b253e6f1837a96b8 = L.circleMarker(
+                [33.94, -118.24],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_b7e004657370c4da4ad0c975360512c4 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_1b5f3c3ed0e725324f0ef45363b60237 = $(`&lt;div id=&quot;html_1b5f3c3ed0e725324f0ef45363b60237&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Southeast - 9571 crimes&lt;/div&gt;`)[0];
+                popup_b7e004657370c4da4ad0c975360512c4.setContent(html_1b5f3c3ed0e725324f0ef45363b60237);
+            
+        
+
+        circle_marker_901c01b0c7c27795b253e6f1837a96b8.bindPopup(popup_b7e004657370c4da4ad0c975360512c4)
+        ;
+
+        
+    
+    
+            var circle_marker_5ea9c59d3f54b49c582503a7b3fed8cd = L.circleMarker(
+                [34.05, -118.3],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_c4ba74115985c687ab9cac06b49fb0a9 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_921a52c3482d7f3904557ac8f4ab8f08 = $(`&lt;div id=&quot;html_921a52c3482d7f3904557ac8f4ab8f08&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Olympic - 9414 crimes&lt;/div&gt;`)[0];
+                popup_c4ba74115985c687ab9cac06b49fb0a9.setContent(html_921a52c3482d7f3904557ac8f4ab8f08);
+            
+        
+
+        circle_marker_5ea9c59d3f54b49c582503a7b3fed8cd.bindPopup(popup_c4ba74115985c687ab9cac06b49fb0a9)
+        ;
+
+        
+    
+    
+            var circle_marker_02a735c8c51efeaad2c474a1970ff0df = L.circleMarker(
+                [34.0, -118.26],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_0e3b9a38b399a9f3571d50fc13baa641 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_217bbfea2ac9ed34f0bdf1aed970777a = $(`&lt;div id=&quot;html_217bbfea2ac9ed34f0bdf1aed970777a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Newton - 9152 crimes&lt;/div&gt;`)[0];
+                popup_0e3b9a38b399a9f3571d50fc13baa641.setContent(html_217bbfea2ac9ed34f0bdf1aed970777a);
+            
+        
+
+        circle_marker_02a735c8c51efeaad2c474a1970ff0df.bindPopup(popup_0e3b9a38b399a9f3571d50fc13baa641)
+        ;
+
+        
+    
+    
+            var circle_marker_4fd49c713621f8dc5f43e769e8502c5c = L.circleMarker(
+                [34.19, -118.45],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_9f64135b7e55a9f6380863afd76edc0d = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_58259be6f7df0e502032641689695dc1 = $(`&lt;div id=&quot;html_58259be6f7df0e502032641689695dc1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Van Nuys - 8621 crimes&lt;/div&gt;`)[0];
+                popup_9f64135b7e55a9f6380863afd76edc0d.setContent(html_58259be6f7df0e502032641689695dc1);
+            
+        
+
+        circle_marker_4fd49c713621f8dc5f43e769e8502c5c.bindPopup(popup_9f64135b7e55a9f6380863afd76edc0d)
+        ;
+
+        
+    
+    
+            var circle_marker_35b50211e39d405e7dea82b0593e366f = L.circleMarker(
+                [34.06, -118.34],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_0204577c81bbd437f3c954c357fc8ef8 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_24d2c1f1aa96e25df5d9ae1b0677a674 = $(`&lt;div id=&quot;html_24d2c1f1aa96e25df5d9ae1b0677a674&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Wilshire - 8482 crimes&lt;/div&gt;`)[0];
+                popup_0204577c81bbd437f3c954c357fc8ef8.setContent(html_24d2c1f1aa96e25df5d9ae1b0677a674);
+            
+        
+
+        circle_marker_35b50211e39d405e7dea82b0593e366f.bindPopup(popup_0204577c81bbd437f3c954c357fc8ef8)
+        ;
+
+        
+    
+    
+            var circle_marker_3de6cb3a023dd23e24035ad2e569dcae = L.circleMarker(
+                [34.2, -118.6],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_201d379fe9b792595cc6ab35e2334b81 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_85a0a93f08c2eb533939496ca7e3c6b7 = $(`&lt;div id=&quot;html_85a0a93f08c2eb533939496ca7e3c6b7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Topanga - 8478 crimes&lt;/div&gt;`)[0];
+                popup_201d379fe9b792595cc6ab35e2334b81.setContent(html_85a0a93f08c2eb533939496ca7e3c6b7);
+            
+        
+
+        circle_marker_3de6cb3a023dd23e24035ad2e569dcae.bindPopup(popup_201d379fe9b792595cc6ab35e2334b81)
+        ;
+
+        
+    
+    
+            var circle_marker_5428c43d7f1a8a4a17505cf448cf55fa = L.circleMarker(
+                [34.06, -118.27],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_0545f36d11d8b6041143cb35d4d1330c = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_150ac509d74e3a2ca6f6f17fa3e89dd8 = $(`&lt;div id=&quot;html_150ac509d74e3a2ca6f6f17fa3e89dd8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Rampart - 8346 crimes&lt;/div&gt;`)[0];
+                popup_0545f36d11d8b6041143cb35d4d1330c.setContent(html_150ac509d74e3a2ca6f6f17fa3e89dd8);
+            
+        
+
+        circle_marker_5428c43d7f1a8a4a17505cf448cf55fa.bindPopup(popup_0545f36d11d8b6041143cb35d4d1330c)
+        ;
+
+        
+    
+    
+            var circle_marker_989bcdd7956379aa38b41446078e2273 = L.circleMarker(
+                [34.2, -118.55],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_5b8e501c778889168fec483bdcaa1a0f = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_776836b168eedf872809daba6c81ba45 = $(`&lt;div id=&quot;html_776836b168eedf872809daba6c81ba45&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;West Valley - 8102 crimes&lt;/div&gt;`)[0];
+                popup_5b8e501c778889168fec483bdcaa1a0f.setContent(html_776836b168eedf872809daba6c81ba45);
+            
+        
+
+        circle_marker_989bcdd7956379aa38b41446078e2273.bindPopup(popup_5b8e501c778889168fec483bdcaa1a0f)
+        ;
+
+        
+    
+    
+            var circle_marker_a588f620b9a82d012b94f4f8401e0739 = L.circleMarker(
+                [34.05, -118.45],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_ba30803f11fe49e254720e6762419a16 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_c4cd82cf317bb1bf90801e39791d618b = $(`&lt;div id=&quot;html_c4cd82cf317bb1bf90801e39791d618b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;West LA - 7911 crimes&lt;/div&gt;`)[0];
+                popup_ba30803f11fe49e254720e6762419a16.setContent(html_c4cd82cf317bb1bf90801e39791d618b);
+            
+        
+
+        circle_marker_a588f620b9a82d012b94f4f8401e0739.bindPopup(popup_ba30803f11fe49e254720e6762419a16)
+        ;
+
+        
+    
+    
+            var circle_marker_ab7c016e97d4d63a2799ffd2217cf962 = L.circleMarker(
+                [34.12, -118.2],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_be044000cbe56dee5684d04e97b7f2c5 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_c77a7aa1962bbf277395ec08bc0fdaf3 = $(`&lt;div id=&quot;html_c77a7aa1962bbf277395ec08bc0fdaf3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Northeast - 7628 crimes&lt;/div&gt;`)[0];
+                popup_be044000cbe56dee5684d04e97b7f2c5.setContent(html_c77a7aa1962bbf277395ec08bc0fdaf3);
+            
+        
+
+        circle_marker_ab7c016e97d4d63a2799ffd2217cf962.bindPopup(popup_be044000cbe56dee5684d04e97b7f2c5)
+        ;
+
+        
+    
+    
+            var circle_marker_1bf13642843265198248f7fe5569b080 = L.circleMarker(
+                [34.26, -118.53],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_2832b08693dc35ea2cfb31a37dbe1ffb = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_745041d479d3dd336e65a01dc2590b1f = $(`&lt;div id=&quot;html_745041d479d3dd336e65a01dc2590b1f&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Devonshire - 7411 crimes&lt;/div&gt;`)[0];
+                popup_2832b08693dc35ea2cfb31a37dbe1ffb.setContent(html_745041d479d3dd336e65a01dc2590b1f);
+            
+        
+
+        circle_marker_1bf13642843265198248f7fe5569b080.bindPopup(popup_2832b08693dc35ea2cfb31a37dbe1ffb)
+        ;
+
+        
+    
+    
+            var circle_marker_2870dd6cc82ac2b305e167393a30ce11 = L.circleMarker(
+                [34.27, -118.47],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_79d3c3f710eb27d2d7cc70cb85a93f62 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_1dad25c8a28901cbe7ea9f7a2e71cfd3 = $(`&lt;div id=&quot;html_1dad25c8a28901cbe7ea9f7a2e71cfd3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Mission - 6990 crimes&lt;/div&gt;`)[0];
+                popup_79d3c3f710eb27d2d7cc70cb85a93f62.setContent(html_1dad25c8a28901cbe7ea9f7a2e71cfd3);
+            
+        
+
+        circle_marker_2870dd6cc82ac2b305e167393a30ce11.bindPopup(popup_79d3c3f710eb27d2d7cc70cb85a93f62)
+        ;
+
+        
+    
+    
+            var circle_marker_4f51a77c703498e8c0e53b9d5388e089 = L.circleMarker(
+                [33.74, -118.29],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_2f3a530f9aab40ceb60c41bd7c48d08f = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_9c1d8b886ae2445adc025d23f66664f5 = $(`&lt;div id=&quot;html_9c1d8b886ae2445adc025d23f66664f5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Harbor - 6618 crimes&lt;/div&gt;`)[0];
+                popup_2f3a530f9aab40ceb60c41bd7c48d08f.setContent(html_9c1d8b886ae2445adc025d23f66664f5);
+            
+        
+
+        circle_marker_4f51a77c703498e8c0e53b9d5388e089.bindPopup(popup_2f3a530f9aab40ceb60c41bd7c48d08f)
+        ;
+
+        
+    
+    
+            var circle_marker_c01c0df7f48124e059f71f1e3b9e99fe = L.circleMarker(
+                [34.03, -118.21],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_8a4962925b4c7b2e4414dec31bbbd367 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_934c0aed06e513f142485e55b8478c9d = $(`&lt;div id=&quot;html_934c0aed06e513f142485e55b8478c9d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Hollenbeck - 6193 crimes&lt;/div&gt;`)[0];
+                popup_8a4962925b4c7b2e4414dec31bbbd367.setContent(html_934c0aed06e513f142485e55b8478c9d);
+            
+        
+
+        circle_marker_c01c0df7f48124e059f71f1e3b9e99fe.bindPopup(popup_8a4962925b4c7b2e4414dec31bbbd367)
+        ;
+
+        
+    
+    
+            var circle_marker_c876ba81a5187a25c1adfce4231793cc = L.circleMarker(
+                [34.27, -118.41],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;#3388ff&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;#3388ff&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_13b3aad7c7f3745ec022c604c1e1cdf2);
+        
+    
+        var popup_65d240847daf504e9e73e469c4577f01 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_821844835a7baadf99350c95c3c4b49a = $(`&lt;div id=&quot;html_821844835a7baadf99350c95c3c4b49a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Foothill - 5983 crimes&lt;/div&gt;`)[0];
+                popup_65d240847daf504e9e73e469c4577f01.setContent(html_821844835a7baadf99350c95c3c4b49a);
+            
+        
+
+        circle_marker_c876ba81a5187a25c1adfce4231793cc.bindPopup(popup_65d240847daf504e9e73e469c4577f01)
+        ;
+
+        
+    
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+</div>
+</div>
+<section id="percentage-of-solved-crimes" class="cell markdown"
+id="01323b33">
+<h3>Percentage of Solved Crimes</h3>
+<p>This pie chart visualizes the proportion of crimes that are
+considered 'Solved' versus 'Unsolved' based on the
+<code>Status Desc</code> column. Crimes with statuses like 'Adult
+Arrest' and 'Juvenile Arrest' are categorized as 'Solved', while others
+are considered 'Unsolved' or 'Investigation Continued'.</p>
+</section>
+<div class="cell code" data-execution_count="32"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:807}"
+id="47c0659d" data-outputId="c3bafc9f-b027-4fe1-ab32-81b1cbfa525f">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Categorize &#39;Status Desc&#39; into &#39;Solved&#39; and &#39;Unsolved&#39;</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>solved_statuses <span class="op">=</span> [<span class="st">&#39;Adult Arrest&#39;</span>, <span class="st">&#39;Juvenile Arrest&#39;</span>]</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>df[<span class="st">&#39;Crime Status Category&#39;</span>] <span class="op">=</span> df[<span class="st">&#39;Status Desc&#39;</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="st">&#39;Solved&#39;</span> <span class="cf">if</span> x <span class="kw">in</span> solved_statuses <span class="cf">else</span> <span class="st">&#39;Unsolved&#39;</span>)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate percentages</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>status_counts <span class="op">=</span> df[<span class="st">&#39;Crime Status Category&#39;</span>].value_counts()</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>status_percentages <span class="op">=</span> status_counts <span class="op">/</span> status_counts.<span class="bu">sum</span>() <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a pie chart</span></span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">8</span>))</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>plt.pie(status_percentages, labels<span class="op">=</span>status_percentages.index, autopct<span class="op">=</span><span class="st">&#39;</span><span class="sc">%1.1f%%</span><span class="st">&#39;</span>, startangle<span class="op">=</span><span class="dv">140</span>, colors<span class="op">=</span>[<span class="st">&#39;skyblue&#39;</span>, <span class="st">&#39;lightcoral&#39;</span>])</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Percentage of Solved vs. Unsolved Crimes&#39;</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">&#39;equal&#39;</span>) <span class="co"># Equal aspect ratio ensures that pie is drawn as a circle.</span></span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-17"><a href="#cb27-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Crime Status Category Distribution:&quot;</span>)</span>
+<span id="cb27-18"><a href="#cb27-18" aria-hidden="true" tabindex="-1"></a>display(status_percentages)</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/96c61a0d29f8a71313fac1e064f83e8844537015.png" /></p>
+</div>
+<div class="output stream stdout">
+<pre><code>Crime Status Category Distribution:
+</code></pre>
+</div>
+<div class="output display_data">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Crime Status Category</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Unsolved</th>
+      <td>92.786259</td>
+    </tr>
+    <tr>
+      <th>Solved</th>
+      <td>7.213741</td>
+    </tr>
+  </tbody>
+</table>
+</div><br><label><b>dtype:</b> float64</label>
+</div>
+</div>
+<section id="top-crimes-by-hour-in-top-3-areas" class="cell markdown"
+id="b8b3f109">
+<h3>Top Crimes by Hour in Top 3 Areas</h3>
+<p>This visualization identifies the top 3 crime areas and, for each of
+these areas, it then identifies the most frequent crime types. A faceted
+bar chart is then used to display the hourly distribution of these top
+crimes within their respective top areas. This helps to pinpoint
+specific crime hotspots and their characteristic time patterns.</p>
+</section>
+<div class="cell code" data-execution_count="33"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:628}"
+id="78d9509f" data-outputId="bbe7a725-e395-4395-e204-9eb5d1f5b27a">
+<div class="sourceCode" id="cb29"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Get the top 3 crime areas</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>top_3_areas <span class="op">=</span> df[<span class="st">&#39;AREA NAME&#39;</span>].value_counts().nlargest(<span class="dv">3</span>).index.tolist()</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Filter the DataFrame for these areas</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>df_top_3_areas <span class="op">=</span> df[df[<span class="st">&#39;AREA NAME&#39;</span>].isin(top_3_areas)].copy()</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. For each of these top 3 areas, find the top crimes (e.g., top 5 crimes per area)</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>top_crimes_per_area <span class="op">=</span> {}</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> area <span class="kw">in</span> top_3_areas:</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>    crimes_in_area <span class="op">=</span> df_top_3_areas[df_top_3_areas[<span class="st">&#39;AREA NAME&#39;</span>] <span class="op">==</span> area]</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>    top_5_crimes <span class="op">=</span> crimes_in_area[<span class="st">&#39;Crm Cd Desc&#39;</span>].value_counts().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    top_crimes_per_area[area] <span class="op">=</span> top_5_crimes</span>
+<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Now, filter df_top_3_areas further to only include these top crimes</span></span>
+<span id="cb29-15"><a href="#cb29-15" aria-hidden="true" tabindex="-1"></a>filtered_for_plot <span class="op">=</span> pd.DataFrame()</span>
+<span id="cb29-16"><a href="#cb29-16" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> area, crimes_list <span class="kw">in</span> top_crimes_per_area.items():</span>
+<span id="cb29-17"><a href="#cb29-17" aria-hidden="true" tabindex="-1"></a>    temp_df <span class="op">=</span> df_top_3_areas[(df_top_3_areas[<span class="st">&#39;AREA NAME&#39;</span>] <span class="op">==</span> area) <span class="op">&amp;</span> (df_top_3_areas[<span class="st">&#39;Crm Cd Desc&#39;</span>].isin(crimes_list))]</span>
+<span id="cb29-18"><a href="#cb29-18" aria-hidden="true" tabindex="-1"></a>    filtered_for_plot <span class="op">=</span> pd.concat([filtered_for_plot, temp_df])</span>
+<span id="cb29-19"><a href="#cb29-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-20"><a href="#cb29-20" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Prepare data for plotting: Number of crimes by hour for top crimes in top 3 areas</span></span>
+<span id="cb29-21"><a href="#cb29-21" aria-hidden="true" tabindex="-1"></a>plot_data <span class="op">=</span> filtered_for_plot.groupby([<span class="st">&#39;AREA NAME&#39;</span>, <span class="st">&#39;Crm Cd Desc&#39;</span>, <span class="st">&#39;Hour OCC&#39;</span>]).size().reset_index(name<span class="op">=</span><span class="st">&#39;Crime Count&#39;</span>)</span>
+<span id="cb29-22"><a href="#cb29-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-23"><a href="#cb29-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot using catplot</span></span>
+<span id="cb29-24"><a href="#cb29-24" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.catplot(</span>
+<span id="cb29-25"><a href="#cb29-25" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>plot_data,</span>
+<span id="cb29-26"><a href="#cb29-26" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">&#39;Hour OCC&#39;</span>,</span>
+<span id="cb29-27"><a href="#cb29-27" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">&#39;Crime Count&#39;</span>,</span>
+<span id="cb29-28"><a href="#cb29-28" aria-hidden="true" tabindex="-1"></a>    hue<span class="op">=</span><span class="st">&#39;Crm Cd Desc&#39;</span>,</span>
+<span id="cb29-29"><a href="#cb29-29" aria-hidden="true" tabindex="-1"></a>    col<span class="op">=</span><span class="st">&#39;AREA NAME&#39;</span>,</span>
+<span id="cb29-30"><a href="#cb29-30" aria-hidden="true" tabindex="-1"></a>    kind<span class="op">=</span><span class="st">&#39;bar&#39;</span>,</span>
+<span id="cb29-31"><a href="#cb29-31" aria-hidden="true" tabindex="-1"></a>    col_wrap<span class="op">=</span><span class="dv">1</span>, <span class="co"># Display columns in a single row</span></span>
+<span id="cb29-32"><a href="#cb29-32" aria-hidden="true" tabindex="-1"></a>    height<span class="op">=</span><span class="dv">5</span>, aspect<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb29-33"><a href="#cb29-33" aria-hidden="true" tabindex="-1"></a>    palette<span class="op">=</span><span class="st">&#39;tab10&#39;</span>, <span class="co"># A different palette for distinct crime types</span></span>
+<span id="cb29-34"><a href="#cb29-34" aria-hidden="true" tabindex="-1"></a>    sharey<span class="op">=</span><span class="va">False</span> <span class="co"># Allow each facet to have its own y-axis scale</span></span>
+<span id="cb29-35"><a href="#cb29-35" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb29-36"><a href="#cb29-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-37"><a href="#cb29-37" aria-hidden="true" tabindex="-1"></a>g.set_axis_labels(<span class="st">&quot;Hour of Day&quot;</span>, <span class="st">&quot;Number of Crimes&quot;</span>)</span>
+<span id="cb29-38"><a href="#cb29-38" aria-hidden="true" tabindex="-1"></a>g.set_titles(<span class="st">&quot;Area: </span><span class="sc">{col_name}</span><span class="st">&quot;</span>)</span>
+<span id="cb29-39"><a href="#cb29-39" aria-hidden="true" tabindex="-1"></a>g.set_xticklabels(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">&#39;right&#39;</span>)</span>
+<span id="cb29-40"><a href="#cb29-40" aria-hidden="true" tabindex="-1"></a>g.<span class="bu">set</span>(xticks<span class="op">=</span><span class="bu">range</span>(<span class="dv">0</span>, <span class="dv">24</span>)) <span class="co"># Ensure all hours are displayed</span></span>
+<span id="cb29-41"><a href="#cb29-41" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">&#39;Top Crimes by Hour in Top 3 Areas&#39;</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb29-42"><a href="#cb29-42" aria-hidden="true" tabindex="-1"></a>plt.tight_layout(rect<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.98</span>])</span>
+<span id="cb29-43"><a href="#cb29-43" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/2ef038032d799c03c470da044b126d2dafdd6372.png" /></p>
+</div>
+</div>
+<section id="1-distribution-of-victims-by-sex" class="cell markdown"
+id="08ee1684">
+<h4>1. Distribution of Victims by Sex</h4>
+<p>This bar plot shows the total number of male, female, and unknown
+victims, providing an overview of the gender distribution among reported
+crime victims.</p>
+</section>
+<div class="cell code" data-execution_count="31"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:409}"
+id="e5554e1b" data-outputId="3d286f67-af98-48ce-ce5c-16501f3907ee">
+<div class="sourceCode" id="cb30"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">&#39;Vict Sex&#39;</span>, hue<span class="op">=</span><span class="st">&#39;Vict Sex&#39;</span>, palette<span class="op">=</span><span class="st">&#39;viridis&#39;</span>, order<span class="op">=</span>df[<span class="st">&#39;Vict Sex&#39;</span>].value_counts().index, legend<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Distribution of Victims by Sex&#39;</span>)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Victim Sex&#39;</span>)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Victims&#39;</span>)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/8325ce52599b4c01442a21a2a2ea1eeadf8a8c03.png" /></p>
+</div>
+</div>
+<section id="2-number-of-victims-by-sex-and-age-group"
+class="cell markdown" id="1b7c87bc">
+<h4>2. Number of Victims by Sex and Age Group</h4>
+<p>This stacked bar plot visualizes the breakdown of victims by age
+group, further separated by their sex. This helps in understanding which
+age demographics are more affected within each gender.</p>
+</section>
+<div class="cell code" data-execution_count="29"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:362}"
+id="25e56a03" data-outputId="d8ccd36e-27a2-4808-b867-1c6572ed07de">
+<div class="sourceCode" id="cb31"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">7</span>))</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data<span class="op">=</span>df, x<span class="op">=</span><span class="st">&#39;Age Group&#39;</span>, hue<span class="op">=</span><span class="st">&#39;Vict Sex&#39;</span>, palette<span class="op">=</span><span class="st">&#39;viridis&#39;</span>,</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>              order<span class="op">=</span>labels) <span class="co"># Ensure age groups are ordered correctly</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Number of Victims by Sex and Age Group&#39;</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Age Group&#39;</span>)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Victims&#39;</span>)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">&#39;right&#39;</span>)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">&#39;Victim Sex&#39;</span>)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>plt.grid(axis<span class="op">=</span><span class="st">&#39;y&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;--&#39;</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/cb3ddfe14bedfe790a19de33eb21e7a0b3fce931.png" /></p>
+</div>
+</div>
+<section id="3-number-of-victims-by-sex-age-group-and-top-5-descents"
+class="cell markdown" id="b0b2f495">
+<h4>3. Number of Victims by Sex, Age Group, and Top 5 Descents</h4>
+<p>This faceted bar chart provides a detailed view of victim
+demographics, breaking down crime counts by victim sex, age group, and
+the top 5 most frequent victim descents. This allows for a deeper
+analysis into specific demographic segments.</p>
+</section>
+<div class="cell code" data-execution_count="30"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:653}"
+id="5f5ae6e1" data-outputId="0ee1dbd2-7f41-48ab-c1a8-684c41cc0a08">
+<div class="sourceCode" id="cb32"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the top N descents for clearer visualization</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>top_descents <span class="op">=</span> df[<span class="st">&#39;Vict Descent&#39;</span>].value_counts().nlargest(<span class="dv">5</span>).index.tolist()</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>df_filtered_descent <span class="op">=</span> df[df[<span class="st">&#39;Vict Descent&#39;</span>].isin(top_descents)]</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>g <span class="op">=</span> sns.catplot(data<span class="op">=</span>df_filtered_descent, x<span class="op">=</span><span class="st">&#39;Age Group&#39;</span>, hue<span class="op">=</span><span class="st">&#39;Vict Descent&#39;</span>, col<span class="op">=</span><span class="st">&#39;Vict Sex&#39;</span>,</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>                kind<span class="op">=</span><span class="st">&#39;count&#39;</span>, height<span class="op">=</span><span class="dv">6</span>, aspect<span class="op">=</span><span class="fl">1.2</span>, palette<span class="op">=</span><span class="st">&#39;viridis&#39;</span>,</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>                col_order<span class="op">=</span>df[<span class="st">&#39;Vict Sex&#39;</span>].value_counts().index, <span class="co"># Order male/female columns</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>                order<span class="op">=</span>labels) <span class="co"># Order age groups on x-axis</span></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>g.set_axis_labels(<span class="st">&quot;Age Group&quot;</span>, <span class="st">&quot;Number of Victims&quot;</span>)</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>g.set_titles(<span class="st">&quot;Victim Sex: </span><span class="sc">{col_name}</span><span class="st">&quot;</span>)</span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>g.set_xticklabels(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">&#39;right&#39;</span>)</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>plt.suptitle(<span class="st">&#39;Number of Victims by Sex, Age Group, and Top 5 Descents&#39;</span>, y<span class="op">=</span><span class="fl">1.02</span>)</span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a>plt.tight_layout(rect<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.98</span>]) <span class="co"># Adjust layout to prevent suptitle overlap</span></span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_6706f8cfb3894724a3ff69fcca7901a4/836ded8b44a8299bf802ab3deaa42b5cf7ee6ab9.png" /></p>
+</div>
+</div>
+</body>
+</html>
